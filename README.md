@@ -42,4 +42,4 @@ Run the .NET Core 3.1 app:
 dotnet run --project CallWithNetStandard
 ```
 
-Each app prints the message from the library implementation that matches its target framework.
+Each console app prints the message from the library implementation that matches its target framework.
