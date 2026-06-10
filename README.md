@@ -35,11 +35,14 @@ Run the .NET 10 app:
 ```bash
 dotnet run --project CallWithNet10
 ```
+will display **This is the best service - .NET 10.0!**
 
 Run the .NET Core 3.1 app:
 
 ```bash
 dotnet run --project CallWithNetStandard
 ```
+will display **This is the best service - .NET Standard!**
+
 
 Each console app prints the message from the library implementation that matches its target framework.
