@@ -8,7 +8,9 @@ It contains:
 - a .NET 10 console app in `CallWithNet10`
 - a .NET Core 3.1 console app in `CallWithNetStandard`
 
-The library uses target-specific partial class implementations so each framework can return its own message. For `net10.0`, the implementation lives in `MultiTargetLibrary/Net10/MyBestService.net10.cs`. For `netstandard2.0`, the implementation lives in `MultiTargetLibrary/NetStandard/MyBestService.netstandard.cs`.
+The library uses target-specific partial class implementations so each framework can return its own message. 
+ - For `net10.0`, the implementation lives in `MultiTargetLibrary/Net10/MyBestService.net10.cs`.
+ - For `netstandard2.0`, the implementation lives in `MultiTargetLibrary/NetStandard/MyBestService.netstandard.cs`.
 
 ## What This Sample Demonstrates
 
@@ -24,7 +26,7 @@ The library uses target-specific partial class implementations so each framework
 
 ## Run The Sample
 
-Both CallWithNet10 and CallWithNetStandard projects call GetMEssage() from MyBestService but the output is different:
+Both **CallWithNet10** and **CallWithNetStandard** projects call **GetMessage()** from **MyBestService** but the output is different:
 
 -  when call from CallWithNet10 it displays **This is the best service - .NET 10.0!**
 -  when call from CallWithNetStandard it displays  **This is the best service - .NET Standard!**
