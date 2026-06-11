@@ -24,25 +24,9 @@ The library uses target-specific partial class implementations so each framework
 
 ## Run The Sample
 
-Build the solution from the repository root:
+Both CallWithNet10 and CallWithNetStandard projects call GetMEssage() from MyBestService but the output is different:
 
-```bash
-dotnet build
-```
+-  when call from CallWithNet10 it displays **This is the best service - .NET 10.0!**
+-  when call from CallWithNetStandard it displays  **This is the best service - .NET Standard!**
 
-Run the .NET 10 app:
-
-```bash
-dotnet run --project CallWithNet10
-```
-will display **This is the best service - .NET 10.0!**
-
-Run the .NET Core 3.1 app:
-
-```bash
-dotnet run --project CallWithNetStandard
-```
-will display **This is the best service - .NET Standard!**
-
-
-Each console app prints the message from the library implementation that matches its target framework.
+So each console app prints the message from the library implementation that matches its target framework.
