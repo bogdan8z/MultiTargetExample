@@ -26,7 +26,7 @@ The library uses target-specific partial class implementations so each framework
 
 ## Run The Sample
 
-Both **CallWithNet10** and **CallWithNetStandard** projects call **GetMessage()** from **MyBestService** but the output is different:
+Both **CallWithNet10** and **CallWithNetStandard** projects call the **MyBestService.GetMessage()** from the same library but the output is different:
 
 -  when call from CallWithNet10 it displays **This is the best service - .NET 10.0!**
 -  when call from CallWithNetStandard it displays  **This is the best service - .NET Standard!**
